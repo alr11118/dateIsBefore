@@ -7,7 +7,10 @@ public class Main{
      // Format neeeded: June 3 comes before Sep 20
      // The method that checks what comes before
      public String main(int m1, int d1, int m2, int d2){
-      if (m1 < m2){
+      if (m1 > 12 || m2 > 12 || d1 > 31 || d2 > 31){
+         return("Invalid month or day");
+      }
+      else if (m1 < m2){
          return(monthToString(m1) + " " + d2 + " comes before " + monthToString(m2) + " " + d2);
       }
       else if (m1 == m2 && d1 < d2){
@@ -24,5 +27,6 @@ public class Main{
       System.out.println(date.main(10, 1, 2, 5));
       System.out.println(date.main(8, 15, 8, 15));
       System.out.println(date.main(8, 15, 8, 16));
+      System.out.println(date.main(40, 150, 89, 165));
       }
 }
