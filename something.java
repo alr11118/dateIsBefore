@@ -1,4 +1,5 @@
 public class something{
+     // Method to see how many days the month has
      public static int monthHasHowManyDays(int m){
       if (m==2){
          return (28);
