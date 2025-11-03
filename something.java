@@ -21,11 +21,13 @@ public class something{
          }
       }
      }
+     
      //Method that turns m integer to String months.
      public static String monthToString(int m){
       String[] months = {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
       return (months[m-1]);
      }
+     
      // Format neeeded: June 3 comes before Sep 20
      // The method that checks what comes before
      public static String dateIsBefore(int m1, int d1, int m2, int d2){
@@ -42,6 +44,7 @@ public class something{
          return(monthToString(m1) + " " + d1 + " does not come before " + monthToString(m2) + " " + d2);
       }
    }
+   
    public static void main(String[] args){
       // Test scenarios
       System.out.println(dateIsBefore(6, 3, 9, 20));
