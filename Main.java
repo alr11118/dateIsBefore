@@ -1,10 +1,4 @@
 public class Main{
-     //Method that turns m integer to String months.
-     public String monthToString(int m){
-      String[] months = {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-      return (months[m-1]);
-     }
-     // Format neeeded: June 3 comes before Sep 20
      // The method that checks what comes before
      public boolean main(int m1, int d1, int m2, int d2){
       if (m1 < m2){
